@@ -1,1 +1,86 @@
 # react-dnd-sort
+
+# react-dnd-sort
+
+This is sortable drag and drop component
+
+## Installation
+
+Install my-project with npm
+
+```bash
+  npm install react-dnd-sort
+  cd my-project
+```
+
+## Usage/Examples
+
+````javascript
+
+import SortableList from 'react-dnd-sort'
+
+``` const [items, setItems] = useState( [
+      {
+            id: 1,
+            text: 'Write a cool JS library',
+            title:"this is Library titile"
+          },
+          {
+            id: 2,
+            text: 'Make it generic enough',
+            title:"this is Library titile"
+          },
+          {
+            id: 3,
+            text: 'Write README',
+            title:"this is Library titile"
+          },
+          {
+            id: 4,
+            text: 'Create some examples',
+            title:"this is Library titile"
+          }, {
+                  id: 5,
+                  text: 'Spam in Twitter and IRC to promote it (note that this element is taller than the others)',
+                  title:"this is Library titile"
+                },
+                {
+                  id: 6,
+                  text: '???',
+                  title:"this is Library titile"
+                },
+                {
+                  id: 7,
+                  text: 'PROFIT',
+                  title:"this is Library titile"
+                }
+              ]);
+
+              const handleMove = (node)=>{
+                  // you can get updated  data after drag drop
+              }
+
+
+<SortableList data= {data} handleMove={handleMove}/>
+
+## Authors
+
+- [@abdulhanna](https://github.com/abdulhanna)
+
+
+## 🚀 About Me
+I'm a full stack developer...
+
+
+## Demo
+
+Insert gif or link to demo
+
+
+## Deployment
+
+To deploy this project run
+
+```bash
+  npm run deploy
+````
