@@ -1,6 +1,6 @@
-# react-dnd-sort
 
-# react-dnd-sort
+
+# React dnd sort
 
 This is sortable drag and drop component
 
