@@ -1,0 +1,11 @@
+ .draggable-item {
+      padding: 8px;
+       margin-bottom: 4px;
+       background-color: white;
+       transition: opacity 0.3s, box-shadow 0.3s;
+    }
+    
+ .draggable-item.dragging {
+       opacity: 0.5;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
