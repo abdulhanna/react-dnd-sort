@@ -2,20 +2,11 @@
 import React, { useState,useCallback, useRef } from 'react';
 import { DndProvider, useDrag, useDrop } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
+import ListComponent from './list';
 
 
 
 
-export const  ListComponent = ({item})=>{
-     // console.log(text)
-  const border =  "2px dashed gray" ;
-     return <>
-      <div style={{padding:'4px',border}}>
-      <p style={{color:"#4f4e4a"}}>{JSON.stringify(item)}</p>
-     
-      </div>
-     </>
-  }
 
 
 const ItemType = 'ITEM';
@@ -73,7 +64,7 @@ const DraggableItem = ({ id, index, item, moveItem, children }) => {
   
     const opacity = isDragging ? 0.5 : 1;
     const boxShadow = isDragging ? "0 4px 8px rgba(0, 0, 0, 0.3)" : "none";
-    const border = isDragging ? "2px dashed gray" : "2px solid gray";
+    // const border = isDragging ? "2px dashed gray" : "2px solid gray";
     drag(drop(ref));
   
     return (
