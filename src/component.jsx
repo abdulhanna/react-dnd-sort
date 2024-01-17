@@ -7,9 +7,10 @@ import { HTML5Backend } from 'react-dnd-html5-backend';
 
 
 export const  ListComponent = ({item})=>{
-    // console.log(text)
+     // console.log(text)
+  const border =  "2px dashed gray" ;
      return <>
-      <div style={{padding:'4px'}}>
+      <div style={{padding:'4px',border}}>
       <p style={{color:"#4f4e4a"}}>{JSON.stringify(item)}</p>
      
       </div>
@@ -76,7 +77,7 @@ const DraggableItem = ({ id, index, item, moveItem, children }) => {
     drag(drop(ref));
   
     return (
-      <div ref={ref} style={{ padding: '8px', marginBottom: '4px',  backgroundColor: "white", opacity,border,boxShadow }} data-handler-id={handlerId}>
+      <div ref={ref} style={{ padding: '8px', marginBottom: '4px',  backgroundColor: "white", opacity,boxShadow }} data-handler-id={handlerId}>
         {React.cloneElement(children, { draggable: false })} {/* Disable dragging on the child component */}
       </div>
     );

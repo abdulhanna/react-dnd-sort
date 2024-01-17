@@ -71,7 +71,7 @@ I'm a full stack developer...
 
 ## Demo
 
-Insert gif or link to demo
+https://codesandbox.io/p/sandbox/react-dnd-sort-xwt83h?file=%2Fsrc%2Fcomponent.jsx%3A44%2C5
 
 ## Deployment
 
