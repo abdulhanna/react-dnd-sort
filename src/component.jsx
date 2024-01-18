@@ -2,8 +2,8 @@
 import React, { useState,useCallback, useRef } from 'react';
 import { DndProvider, useDrag, useDrop } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
-import ListComponent from './list';
 import draggableItemClass from "./draggableItem.css"
+import ListComponent from "./list.jsx"
 
 const ItemType = 'ITEM';
 
