@@ -58,13 +58,13 @@ const DraggableItem = ({ id, index, item, moveItem, children }) => {
     }),
   });
 
-  // const opacity = isDragging ? 0.5 : 1;
-  // const boxShadow = isDragging ? "0 4px 8px rgba(0, 0, 0, 0.3)" : "none";
-  // const border = isDragging ? "2px dashed gray" : "2px solid gray";
+  const opacity = isDragging ? 0.5 : 1;
+  const boxShadow = isDragging ? "0 4px 8px rgba(0, 0, 0, 0.3)" : "none";
+  
   drag(drop(ref));
-  const itemClass = `${draggableItemClass} ${boxShadow} ${opacity}}`;
+  
   return (
-    <div ref={ref} style={itemClass} data-handler-id={handlerId}>
+    <div ref={ref} style={{padding: '8px', marginBottom: '4px',  backgroundColor: "white",opacity,boxShadow}} data-handler-id={handlerId}>
       {React.cloneElement(children, { draggable: false })} {/* Disable dragging on the child component */}
     </div>
   );
